@@ -5,8 +5,15 @@
     </div>
 
     <div class="col-sm-6 d-flex justify-content-start" [@animacao-painel]="estadoPainel">
-		  <app-login></app-login>
-      <!-- <app-cadastro></app-cadastro> -->
+		  
+      <div *ngIf="cadastro; else formLogin">
+        <app-login></app-login>
+      </div>
+      
+      <ng-template #formLogin>
+        <app-cadastro></app-cadastro>
+      </ng-template>
+
     </div>  
   </div>
 </div>
