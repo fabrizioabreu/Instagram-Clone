@@ -8,14 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css'],
   animations: [ 
     trigger('banner', [
-      state('escondido', style({
-        opacity: 0
-      })),
-      state('visivel', style({
-        opacity: 1
-      })),
-      transition('escondido <=> visivel',
-        animate('1s ease-in'))
+      state('escondido', style({ opacity: 0 })),
+      state('visivel'  , style({ opacity: 1 })),
+      transition('escondido <=> visivel', animate('1s ease-in'))
     ])
     // Documentação.
     // https://angular.io/guide/animations
