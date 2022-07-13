@@ -35,9 +35,7 @@ export class AcessoComponent implements OnInit {
   }
 
   public exibirPainel(event: string): void {
-
     this.cadastro = event === 'cadastro' ? true : false;
-
   }
 
 }
